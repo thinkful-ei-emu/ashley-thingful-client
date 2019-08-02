@@ -1,6 +1,7 @@
 import config from '../config'
 import TokenService from '../services/token-service'
 
+
 const ThingApiService = {
   getThings() {
     return fetch(`${config.API_ENDPOINT}/things`, {

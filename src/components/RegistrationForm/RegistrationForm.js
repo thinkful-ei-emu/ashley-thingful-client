@@ -26,8 +26,7 @@ export default class RegistrationForm extends Component {
       password.value = ''
       this.props.onRegistrationSuccess()
     })
-    .catch(res => {  
-      console.log('in catch', res)    
+    .catch(res => {      
       this.setState({error: res.error})
     })
     
